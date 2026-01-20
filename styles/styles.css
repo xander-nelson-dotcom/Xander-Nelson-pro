@@ -338,15 +338,17 @@ footer {
 }
 
 .back-to-top {
-    display: block;
-    text-align: center;
-    margin: 40 auto 40 auto;
-    color: #111;
-    text-decoration: underline;
-    font-size: large;
-    ;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+  color: #111;
+  text-decoration: underline;
+  font-size: large; /* or whatever size you like */
 }
+
 body.scratchmybackground-page {
     background-color: #ffe6cc; /* pick any color you want */
 }
+
 
