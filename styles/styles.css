@@ -39,8 +39,10 @@ a {
   justify-content: space-between;
   align-items: center;
   color: white;
-  position: sticky;
+  position: fixed;   /* fixed instead of sticky */
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
 }
 
@@ -60,6 +62,15 @@ a {
 .navbar nav a:hover {
   color: var(--accent);
 }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  padding-top: 70px; /* matches navbar height */
+}
+
 
 /* HERO ---------------------------------------------------------- */
 
@@ -324,3 +335,4 @@ footer {
     overflow-x: hidden;
   }
 }
+
