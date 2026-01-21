@@ -126,14 +126,13 @@ a {
   padding: 36px 44px;
   border-radius: var(--radius-lg);
   box-shadow: none;
-  border: 2px solid rgba(0, 0, 0, 0.18); /* darker grey so it shows */
+  border: 2px solid rgba(0, 0, 0, 0.2); /* darker grey so it shows */
   transition: transform 0.25s ease;
 }
 
 .section:hover {
-  transform: translateY(-3px); /* hover lift only */
+  transform: translateY(-3px); /* just lift on hover */
 }
-
 
 .section h2 {
   margin-bottom: 14px;
@@ -307,4 +306,3 @@ body.scratchmybackground-page {
     box-shadow: 0 10px 34px rgba(90, 188, 234, 0.9);
   }
 }
-
