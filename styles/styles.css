@@ -271,7 +271,6 @@ body.scratchmybackground-page {
   padding: 14px 26px;
   background: #ffffff;
   color: #000000;
-  border: 2px solid var(--accent);
   box-shadow: 0 6px 20px rgba(90, 188, 234, 0.5);
 }
 
@@ -279,7 +278,6 @@ body.scratchmybackground-page {
 
 .btn-secondary {
   padding: 12px 24px;
-  border: 2px solid #d1d5db;
   color: #000000;
   background: #ffffff;
 }
@@ -313,3 +311,4 @@ body.scratchmybackground-page {
     box-shadow: 0 10px 34px rgba(90, 188, 234, 0.9);
   }
 }
+
