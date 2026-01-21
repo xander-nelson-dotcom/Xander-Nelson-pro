@@ -266,20 +266,19 @@ body.scratchmybackground-page {
 }
 
 /* Primary button (Resume) */
-
 .btn-primary {
   padding: 14px 26px;
   background: #ffffff;
   color: #000000;
+  border: none; /* no border */
   box-shadow: 0 6px 20px rgba(90, 188, 234, 0.5);
-}
 
 /* Secondary button (LinkedIn) */
-
 .btn-secondary {
   padding: 12px 24px;
-  color: #000000;
   background: #ffffff;
+  color: #000000;
+  border: none; /* no border */
 }
 
 /* Glow + float on both */
@@ -311,4 +310,5 @@ body.scratchmybackground-page {
     box-shadow: 0 10px 34px rgba(90, 188, 234, 0.9);
   }
 }
+
 
