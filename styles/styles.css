@@ -236,7 +236,7 @@ footer {
 /* SPECIAL PAGE BACKGROUND -------------------------------------- */
 
 body.scratchmybackground-page {
-  background-color: #ffe6cc;
+  background-color: #ffffff;
 }
 
 /* HERO CTA BUTTONS --------------------------------------------- */
@@ -310,5 +310,6 @@ body.scratchmybackground-page {
     box-shadow: 0 10px 34px rgba(90, 188, 234, 0.9);
   }
 }
+
 
 
