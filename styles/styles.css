@@ -122,17 +122,18 @@ a {
 .section {
   width: 100%;
   margin: 40px auto;
-  background: transparent;               /* same as body */
+  background: #ffffff; /* same as background */
   padding: 36px 44px;
   border-radius: var(--radius-lg);
-  box-shadow: none;                      /* no card shadow */
-  border: none;                          /* no border */
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: none; /* no drop shadow */
+  border: 2px solid rgba(0, 0, 0, 0.06); /* light grey border */
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .section:hover {
   transform: translateY(-3px);
   box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.12); /* slightly darker on hover */
 }
 
 .section h2 {
@@ -267,7 +268,7 @@ body.scratchmybackground-page {
 /* Primary button (Resume) */
 .btn-primary {
   padding: 14px 26px;
-  background: #ffffff;
+  background-color: #ffffff;
   color: #000000;
   border: none;
   box-shadow: 0 6px 20px rgba(90, 188, 234, 0.5);
@@ -276,7 +277,7 @@ body.scratchmybackground-page {
 /* Secondary button (LinkedIn) */
 .btn-secondary {
   padding: 12px 24px;
-  background: #ffffff;
+  background-color: #ffffff;
   color: #000000;
   border: none;
 }
