@@ -13,7 +13,7 @@
   --shadow-hover: 0 10px 34px rgba(0, 0, 0, 0.14);
 }
 
-/* GLOBAL -------------------------------------------------------- */
+/* GLOBAL */
 
 html {
   scroll-behavior: smooth;
@@ -28,10 +28,9 @@ body {
 
 a {
   text-decoration: none;
-  /* no color: inherit here so buttons can control their own text color [web:33][web:47] */
 }
 
-/* NAVBAR -------------------------------------------------------- */
+/* NAVBAR */
 
 .navbar {
   background: rgba(17, 17, 17, 0.95);
@@ -62,7 +61,7 @@ a {
   color: var(--accent);
 }
 
-/* HERO ---------------------------------------------------------- */
+/* HERO */
 
 .hero {
   padding: 90px 10%;
@@ -96,7 +95,7 @@ a {
   box-shadow: 0 14px 42px rgba(0, 0, 0, 0.22);
 }
 
-/* SUBPAGE HEADERS ----------------------------------------------- */
+/* SUBPAGE HEADERS */
 
 .page-header {
   text-align: center;
@@ -112,7 +111,7 @@ a {
   color: var(--text-muted);
 }
 
-/* CONTENT SECTIONS (CARDS) -------------------------------------- */
+/* CONTENT SECTIONS (CARDS) */
 
 .section-wrapper {
   padding: 3rem 1rem;
@@ -127,7 +126,7 @@ a {
   padding: 36px 44px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
-  border: 2px solid rgba(0, 0, 0, 0.06); /* slightly thicker border [web:42] */
+  border: 2px solid rgba(0, 0, 0, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
@@ -152,7 +151,7 @@ a {
   padding-left: 22px;
 }
 
-/* ABOUT PAGE PHOTO ---------------------------------------------- */
+/* ABOUT PHOTO */
 
 .about-photo {
   width: 270px;
@@ -161,7 +160,7 @@ a {
   margin-bottom: 22px;
 }
 
-/* COMPANY BLOCK ------------------------------------------------- */
+/* COMPANY BLOCK */
 
 .company-block {
   display: flex;
@@ -180,7 +179,7 @@ a {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
-/* BACK TO TOP --------------------------------------------------- */
+/* BACK TO TOP */
 
 .back-to-top {
   display: block;
@@ -196,7 +195,7 @@ a {
   color: var(--accent);
 }
 
-/* FOOTER -------------------------------------------------------- */
+/* FOOTER */
 
 footer {
   background: var(--dark);
@@ -207,7 +206,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVE ---------------------------------------------------- */
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
   .hero {
@@ -234,13 +233,13 @@ footer {
   }
 }
 
-/* SPECIAL PAGE BACKGROUND -------------------------------------- */
+/* SPECIAL PAGE BACKGROUND */
 
 body.scratchmybackground-page {
   background-color: #ffe6cc;
 }
 
-/* HERO CTA BUTTONS --------------------------------------------- */
+/* HERO CTA BUTTONS */
 
 .hero-cta {
   margin-top: 28px;
@@ -250,6 +249,7 @@ body.scratchmybackground-page {
 }
 
 /* Base button */
+
 .btn {
   display: inline-block;
   border-radius: 999px;
@@ -265,47 +265,44 @@ body.scratchmybackground-page {
     background-color 0.25s ease;
 }
 
-/* Primary button (blue background, white text) */
+/* Primary button */
+
 .btn-primary {
   padding: 14px 26px;
-  background: var(--accent);
-  color: #ffffff;          /* explicit text color */
-  border: 2px solid transparent;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid var(--accent);
   box-shadow: 0 6px 20px rgba(90, 188, 234, 0.5);
 }
 
-/* Secondary button (outline, dark text) */
+/* Secondary button */
+
 .btn-secondary {
   padding: 12px 24px;
+  background: #ffffff;
+  color: #000000;
   border: 2px solid #d1d5db;
-  color: #374151;          /* explicit text color */
-  background: #ffffff;     /* solid white background */
 }
 
-/* Glow + float on both */
+/* Glow + float */
+
 .btn-primary,
 .btn-secondary {
   animation: floatGlow 3s ease-in-out infinite;
 }
 
-/* Hover states: keep text readable and consistent */
-.btn-primary:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 10px 30px rgba(90, 188, 234, 0.75);
-  background: #ffffff;
-  color: var(--accent);
-  border-color: var(--accent);
-}
+/* Hover states */
 
+.btn-primary:hover,
 .btn-secondary:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 10px 30px rgba(90, 188, 234, 0.75);
-  border-color: var(--accent);
-  color: var(--accent);
   background-color: #ffffff;
+  color: #000000;
 }
 
 /* Floating + glowing animation */
+
 @keyframes floatGlow {
   0%, 100% {
     transform: translateY(0);
@@ -315,23 +312,4 @@ body.scratchmybackground-page {
     transform: translateY(-6px);
     box-shadow: 0 10px 34px rgba(90, 188, 234, 0.9);
   }
-}
-/* FINAL OVERRIDES FOR RESUME BUTTON */
-a.btn-primary {
-  background-color: #ffffff !important; /* white button */
-  color: #000000 !important;            /* black text */
-  border: 2px solid var(--accent) !important;
-}
-
-/* Keep glow + float but don't change text color on hover */
-a.btn-primary:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 10px 30px rgba(90, 188, 234, 0.75);
-  background-color: #ffffff !important;
-  color: #000000 !important;  /* stays black on hover too */
-}
-a.btn-secondary {
-  background-color: #ffffff !important;   /* white button */
-  color: #000000 !important;              /* black text */
-  border: 2px solid #ffffff !important;
 }
