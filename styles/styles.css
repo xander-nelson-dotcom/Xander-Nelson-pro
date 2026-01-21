@@ -41,7 +41,7 @@ a {
   color: white;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 .logo {
@@ -122,16 +122,16 @@ a {
 .section {
   width: 100%;
   margin: 40px auto;
-  background: #ffffff; /* same as background */
+  background: #ffffff;
   padding: 36px 44px;
   border-radius: var(--radius-lg);
   box-shadow: none;
-  border: 2px solid rgba(0, 0, 0, 0.2); /* darker grey so it shows */
+  border: 2px solid rgba(0, 0, 0, 0.2);
   transition: transform 0.25s ease;
 }
 
 .section:hover {
-  transform: translateY(-3px); /* just lift on hover */
+  transform: translateY(-3px);
 }
 
 .section h2 {
@@ -204,39 +204,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVE ---------------------------------------------------- */
-
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column-reverse;
-    text-align: center;
-    padding-top: 50px;
-  }
-
-  .hero-text p {
-    margin: 0 auto;
-  }
-
-  .hero-img img {
-    width: 260px;
-  }
-
-  .section-wrapper {
-    padding: 2rem 1rem;
-  }
-
-  .section {
-    width: 100%;
-    padding: 30px;
-  }
-}
-
-/* SPECIAL PAGE BACKGROUND -------------------------------------- */
-
-body.scratchmybackground-page {
-  background-color: #ffffff;
-}
-
 /* HERO CTA BUTTONS --------------------------------------------- */
 
 .hero-cta {
@@ -272,7 +239,7 @@ body.scratchmybackground-page {
   box-shadow: 0 6px 20px rgba(90, 188, 234, 0.5);
 }
 
-/* Secondary button (LinkedIn) */
+/* Secondary button (LinkedIn, Email) */
 .btn-secondary {
   padding: 12px 24px;
   background-color: #ffffff;
@@ -306,10 +273,12 @@ body.scratchmybackground-page {
     box-shadow: 0 10px 34px rgba(90, 188, 234, 0.9);
   }
 }
+
 /* MOBILE TWEAKS ----------------------------------------------- */
+
 @media (max-width: 900px) {
   .hero {
-    flex-direction: column-reverse; /* image below text */
+    flex-direction: column-reverse;
     text-align: center;
     padding: 60px 1.5rem 40px;
     gap: 32px;
@@ -334,23 +303,6 @@ body.scratchmybackground-page {
   }
 
   .section-wrapper {
-    padding: 2rem 1rem;
-  }
-
-  .section {
-    width: 100%;
-    padding: 24px 20px;
-    margin: 24px auto;
-  }
-}
-/* FIX MOBILE WIDTH + OVERFLOW ------------------------------- */
-@media (max-width: 900px) {
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .section-wrapper {
     padding: 1.5rem 1rem;
     max-width: 100%;
   }
@@ -366,5 +318,9 @@ body.scratchmybackground-page {
     padding-left: 18px;
     margin-right: 0;
   }
-}
 
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
