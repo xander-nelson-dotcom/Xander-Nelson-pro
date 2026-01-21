@@ -24,6 +24,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-main);
   color: var(--text-main);
+  padding-top: 70px; /* matches navbar height */
 }
 
 a {
@@ -62,15 +63,6 @@ a {
 .navbar nav a:hover {
   color: var(--accent);
 }
-
-body {
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--bg-main);
-  color: var(--text-main);
-  padding-top: 70px; /* matches navbar height */
-}
-
 
 /* HERO ---------------------------------------------------------- */
 
@@ -335,4 +327,5 @@ footer {
     overflow-x: hidden;
   }
 }
+
 
