@@ -274,4 +274,36 @@ body.scratchmybackground-page {
 }
 
 /* Secondary button (LinkedIn) */
-.btn-secon
+.btn-secondary {
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+}
+
+/* Glow + float on both */
+.btn-primary,
+.btn-secondary {
+  animation: floatGlow 3s ease-in-out infinite;
+}
+
+/* Hover states */
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 30px rgba(90, 188, 234, 0.75);
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Floating + glowing animation */
+@keyframes floatGlow {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 6px 20px rgba(90, 188, 234, 0.5);
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 34px rgba(90, 188, 234, 0.9);
+  }
+}
