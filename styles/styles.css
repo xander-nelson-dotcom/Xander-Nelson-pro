@@ -343,3 +343,28 @@ body.scratchmybackground-page {
     margin: 24px auto;
   }
 }
+/* FIX MOBILE WIDTH + OVERFLOW ------------------------------- */
+@media (max-width: 900px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .section-wrapper {
+    padding: 1.5rem 1rem;
+    max-width: 100%;
+  }
+
+  .section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 16px;
+    margin: 24px 0;
+  }
+
+  .section ul {
+    padding-left: 18px;
+    margin-right: 0;
+  }
+}
+
