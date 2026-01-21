@@ -306,3 +306,40 @@ body.scratchmybackground-page {
     box-shadow: 0 10px 34px rgba(90, 188, 234, 0.9);
   }
 }
+/* MOBILE TWEAKS ----------------------------------------------- */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse; /* image below text */
+    text-align: center;
+    padding: 60px 1.5rem 40px;
+    gap: 32px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .hero-img img {
+    width: 220px;
+  }
+
+  .hero-cta {
+    justify-content: center;
+  }
+
+  .section-wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .section {
+    width: 100%;
+    padding: 24px 20px;
+    margin: 24px auto;
+  }
+}
