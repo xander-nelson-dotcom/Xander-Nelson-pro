@@ -36,6 +36,7 @@ a {
 .navbar {
   background: rgba(17, 17, 17, 0.95);
   padding: 16px 64px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +58,6 @@ a {
 .navbar nav a {
   color: #d0d0d0;
   margin-left: 26px;
-  font-size: 18px;
   transition: color 0.25s ease;
 }
 
@@ -328,6 +328,7 @@ footer {
     overflow-x: hidden;
   }
 }
+
 
 
 
