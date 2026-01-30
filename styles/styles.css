@@ -35,7 +35,6 @@ a {
 
 .navbar {
   background: rgba(17, 17, 17, 0.95);
-  font-size: 16px;
   padding: 16px 64px;
   display: flex;
   justify-content: space-between;
@@ -52,13 +51,13 @@ a {
   height: 100px;
   width: auto;
   display: block;
-  margin-right: 24px;       /* space between image and links */
+  margin-right: 20px;       /* space between image and links */
 }
 
 .navbar nav a {
   color: #d0d0d0;
   margin-left: 26px;
-  font-size: 0.95rem;
+  font-size: 18px;
   transition: color 0.25s ease;
 }
 
