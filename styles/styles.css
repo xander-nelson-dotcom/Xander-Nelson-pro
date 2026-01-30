@@ -49,7 +49,7 @@ a {
 }
 
 .logo {
-  height: 100px;
+  height: 80px;
   width: auto;
   display: block;
   margin-right: 10px;       /* space between image and links */
@@ -328,6 +328,7 @@ footer {
     overflow-x: hidden;
   }
 }
+
 
 
 
