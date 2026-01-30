@@ -35,7 +35,7 @@ a {
 
 .navbar {
   background: rgba(17, 17, 17, 0.95);
-  padding: 16px 64px;
+  padding: 16px 30px;
   font-size: 20px;
   display: flex;
   justify-content: space-between;
@@ -52,7 +52,7 @@ a {
   height: 100px;
   width: auto;
   display: block;
-  margin-right: 20px;       /* space between image and links */
+  margin-right: 10px;       /* space between image and links */
 }
 
 .navbar nav a {
@@ -328,6 +328,7 @@ footer {
     overflow-x: hidden;
   }
 }
+
 
 
 
