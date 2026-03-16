@@ -4,85 +4,100 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Xander Nelson | Portfolio</title>
-   <link rel="icon" type="image/x-icon" href="faviconbruh.png" />
+  <link rel="icon" type="image/x-icon" href="faviconbruh.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
 
- <!-- NAVBAR -->
-<header class="navbar">
-  <img src="faviconbruh.png" alt="Xander Nelson" class="logo" />
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#resume">Resume</a>
-    <a href="#about">About Me</a>
-  </nav>
-</header>
-  
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <img src="faviconbruh.png" alt="Xander Nelson" class="logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#resume">Resume</a>
+      <a href="#about">About Me</a>
+    </nav>
+  </header>
+
   <!-- HERO -->
   <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Welcome! I'm Xander Nelson</h1>
-      <p>Business Student — BYU</p>
+    <div class="hero-bg-text" aria-hidden="true">XN</div>
 
-      <div class="hero-cta">
-        <a href="MASTER RESUME!.pdf"
-           class="btn btn-primary"
-           target="_blank">
-          Download Resume
-        </a>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow">Marketing · Leadership · Brand Strategy</div>
+        <h1>Hi, I'm<br><span class="hero-name">Xander Nelson.</span></h1>
+        <p class="hero-tagline">I lead teams, build brands,<br>and make things run better.</p>
+        <p class="hero-sub">BYU Marketing Student · Former GM · Guinness World Record Holder</p>
 
-        <a href="https://www.linkedin.com/in/xander-nelson/"
-           target="_blank"
-           class="btn btn-secondary">
-          Connect on LinkedIn
-        </a>
+        <div class="hero-cta">
+          <a href="MASTER RESUME!.pdf" class="btn btn-primary" target="_blank">
+            <span>Download Resume</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/xander-nelson/" target="_blank" class="btn btn-outline">
+            LinkedIn
+          </a>
+          <a href="mailto:xander@russandbrit.com" class="btn btn-outline">
+            Email Me
+          </a>
+        </div>
+      </div>
 
-        <a href="mailto:xander@russandbrit.com"
-          class="btn btn-secondary"
-          target="_blank"
-          rel="noopener noreferrer">
-          Email Me
-        </a>
-
+      <div class="hero-img">
+        <div class="hero-img-frame">
+          <img src="images/propic.jpg" alt="Xander Nelson" />
+        </div>
+        <div class="hero-stat-card card-1">
+          <span class="stat-num">Guinness</span>
+          <span class="stat-label">World Record Holder</span>
+        </div>
+        <div class="hero-stat-card card-2">
+          <span class="stat-num">33%</span>
+          <span class="stat-label">Faster line times at Swig</span>
+        </div>
       </div>
     </div>
 
-    <div class="hero-img">
-      <img src="images/propic.jpg" alt="Xander Nelson" />
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
   <!-- RESUME -->
   <section id="resume" class="section-wrapper">
     <div class="page-header">
+      <div class="section-label">Experience</div>
       <h1>Resume</h1>
       <p>A summary of my experience, leadership, and achievements.</p>
     </div>
 
     <!-- EDUCATION -->
     <div class="section">
-      <h2>Education</h2>
+      <h2><span class="section-tag">01</span> Education</h2>
 
       <div class="company-block">
         <img src="images/logos/byu.png" class="company-logo" alt="BYU Logo">
         <div>
-          <h3>Brigham Young University — Provo, Utah (2022–Present)</h3>
+          <h3>Brigham Young University — Provo, Utah</h3>
+          <span class="date-tag">2022–Present</span>
         </div>
       </div>
       <ul>
         <li>BYU Marketing Team — Team Member</li>
-        <li>
-          Skills: ERP systems, Data Security & Privacy, Database Modeling, SQL,
-          Project Management, Excel Automation (VBA), Tableau, Web Development (HTML & CSS)
-        </li>
+        <li>Skills: ERP systems, Data Security & Privacy, Database Modeling, SQL, Project Management, Excel Automation (VBA), Tableau, Web Development (HTML & CSS)</li>
       </ul>
 
       <div class="company-block">
         <img src="images/logos/brighton.webp" class="company-logo" alt="Brighton High School Logo">
         <div>
-          <h3>Brighton High School — Cottonwood Heights, Utah (2018–2022)</h3>
+          <h3>Brighton High School — Cottonwood Heights, Utah</h3>
+          <span class="date-tag">2018–2022</span>
         </div>
       </div>
       <ul>
@@ -96,12 +111,13 @@
 
     <!-- EXPERIENCE -->
     <div class="section">
-      <h2>Experience</h2>
+      <h2><span class="section-tag">02</span> Experience</h2>
 
       <div class="company-block">
         <img src="images/logos/swig.png" class="company-logo" alt="Swig Logo">
         <div>
-          <h3>General Manager — Swig (Orem) | Aug 2025 – Jan 2026</h3>
+          <h3>General Manager — Swig (Orem)</h3>
+          <span class="date-tag">Aug 2025 – Jan 2026</span>
         </div>
       </div>
       <ul>
@@ -119,7 +135,8 @@
       <div class="company-block">
         <img src="images/logos/fsy.jpg" class="company-logo" alt="FSY Logo">
         <div>
-          <h3>Youth Counselor — For the Strength of Youth | May 2025 – Aug 2025</h3>
+          <h3>Youth Counselor — For the Strength of Youth</h3>
+          <span class="date-tag">May 2025 – Aug 2025</span>
         </div>
       </div>
       <ul>
@@ -133,7 +150,8 @@
       <div class="company-block">
         <img src="images/logos/swig.png" class="company-logo" alt="Swig Logo">
         <div>
-          <h3>Shift Lead — Swig (Cottonwood Heights & Provo) | 2022–2023, 2025</h3>
+          <h3>Shift Lead — Swig (Cottonwood Heights & Provo)</h3>
+          <span class="date-tag">2022–2023, 2025</span>
         </div>
       </div>
       <ul>
@@ -145,7 +163,8 @@
       <div class="company-block">
         <img src="images/logos/nelsonfamilyestate.png" class="company-logo" alt="Nelson Estate Logo">
         <div>
-          <h3>Nelson Estate Maintenance — Midway, UT | 2016–2022</h3>
+          <h3>Nelson Estate Maintenance — Midway, UT</h3>
+          <span class="date-tag">2016–2022</span>
         </div>
       </div>
       <ul>
@@ -156,7 +175,8 @@
       <div class="company-block">
         <img src="images/logos/christmas in color.png" class="company-logo" alt="Christmas in Color Logo">
         <div>
-          <h3>Christmas in Color — Draper, UT | 2021</h3>
+          <h3>Christmas in Color — Draper, UT</h3>
+          <span class="date-tag">2021</span>
         </div>
       </div>
       <ul>
@@ -166,12 +186,13 @@
 
     <!-- LEADERSHIP & SERVICE -->
     <div class="section">
-      <h2>Leadership & Service</h2>
+      <h2><span class="section-tag">03</span> Leadership & Service</h2>
 
       <div class="company-block">
         <img src="images/logos/church.webp" class="company-logo" alt="LDS Logo">
         <div>
-          <h3>Missionary — Newport Beach California Mission (2023–2025)</h3>
+          <h3>Missionary — Newport Beach California Mission</h3>
+          <span class="date-tag">2023–2025</span>
         </div>
       </div>
       <ul>
@@ -182,68 +203,67 @@
     </div>
 
     <!-- ACHIEVEMENTS -->
-    <div class="section">
-      <h2>Achievements & Interests</h2>
-      <ul>
-        <li>Brighton High School 4×100 Freestyle Relay Record Holder</li>
-        <li>Scholastic & Leadership Excellence Award — U.S. Marines</li>
-        <li>Certificate in Spanish Translation & Communication</li>
-        <li>Guinness World Record team leader</li>
-        <li>Eagle Scout</li>
-        <li>Hobbies: woodworking, music production, blacksmithing, ballroom dance, weightlifting</li>
-      </ul>
+    <div class="section achievements-section">
+      <h2><span class="section-tag">04</span> Achievements & Interests</h2>
+      <div class="achievement-grid">
+        <div class="achievement-pill">🏊 4×100 Freestyle Relay Record Holder</div>
+        <div class="achievement-pill">🎖️ U.S. Marines Scholastic & Leadership Award</div>
+        <div class="achievement-pill">🌎 Spanish Translation Certificate</div>
+        <div class="achievement-pill">📖 Guinness World Record Team Leader</div>
+        <div class="achievement-pill">⚜️ Eagle Scout</div>
+        <div class="achievement-pill">🪵 Woodworking & Blacksmithing</div>
+        <div class="achievement-pill">🎵 Music Production</div>
+        <div class="achievement-pill">💃 Ballroom Dance</div>
+        <div class="achievement-pill">🏋️ Weightlifting</div>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section-wrapper">
+  <section id="about" class="section-wrapper about-wrapper">
     <div class="page-header">
+      <div class="section-label">Get to Know Me</div>
       <h1>About Me</h1>
-      <p>Who I am, what drives me, and where I’m going.</p>
+      <p>Who I am, what drives me, and where I'm going.</p>
     </div>
 
-    <div class="section" style="text-align:center;">
+    <div class="about-hero">
       <img src="images/profile pic.png" class="about-photo" alt="Xander">
-      <p>
-        Hello! I'm Xander — a driven, people-oriented leader with a passion for branding, marketing,
-        and helping teams excel. I love building experiences, improving systems, and understanding what makes people move.
-      </p>
+      <div class="about-intro">
+        <p>Hello! I'm Xander — a driven, people-oriented leader with a passion for branding, marketing, and helping teams excel. I love building experiences, improving systems, and understanding what makes people move.</p>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>What I'm Passionate About</h2>
-      <ul>
-        <li>Creating meaningful experiences that leave people better than before.</li>
-        <li>Understanding people — what drives them, how they think, and how to truly connect.</li>
-        <li>Creativity and storytelling, especially in how brands shape culture and emotion.</li>
-        <li>Leadership that builds people up and helps them grow in real, lasting ways.</li>
-        <li>Becoming a better version of myself and pursuing growth in every part of life.</li>
-      </ul>
-    </div>
+    <div class="about-grid">
+      <div class="section">
+        <h2>What I'm Passionate About</h2>
+        <ul>
+          <li>Creating meaningful experiences that leave people better than before.</li>
+          <li>Understanding people — what drives them, how they think, and how to truly connect.</li>
+          <li>Creativity and storytelling, especially in how brands shape culture and emotion.</li>
+          <li>Leadership that builds people up and helps them grow in real, lasting ways.</li>
+          <li>Becoming a better version of myself and pursuing growth in every part of life.</li>
+        </ul>
+      </div>
 
-    <div class="section">
-      <h2>Where I'm Going</h2>
-      <p>
-        As I progress academically and professionally, I hope to build meaningful connections and leave a positive impact wherever
-        I work. I have set my professional goals to be focused on careers that seamlessly involve
-        brand management and public-facing corporate roles, likely leading to positions such as chief brand officer.
-        Regardless of whichever company I'm a part of, I want to see people as people, not numbers, and look for ways to improve their lives in impactful ways.
-      </p>
+      <div class="section">
+        <h2>Where I'm Going</h2>
+        <p>As I progress academically and professionally, I hope to build meaningful connections and leave a positive impact wherever I work. My professional goals are focused on brand management and public-facing corporate roles — ultimately leading to positions like Chief Brand Officer. Regardless of where I end up, I want to see people as people, not numbers, and find ways to improve their lives in impactful ways.</p>
+      </div>
     </div>
 
     <div class="section">
       <h2>Fun Facts</h2>
-      <ul>
-        <li>I love learning hands-on skills like woodworking and metalworking — building things grounds me.</li>
-        <li>I always have a personal project going, whether it's something creative or something practical.</li>
-        <li>Music is a big part of my life — I love producing beats and discovering new sounds.</li>
-        <li>I genuinely enjoy connecting with people and understanding their stories and backgrounds.</li>
-        <li>Spanish has become a meaningful part of my life, and I love the cultures connected to it.</li>
-        <li>I'm happiest when I'm outside — mountains, late-night drives, and bonfires are my go-tos.</li>
-        <li>I’m big on traditions, meaningful moments, and spending intentional time with people.</li>
-        <li>I love friendly competition — games, sports, challenges — anything that brings people together.</li>
-        <li>I'm always trying to grow personally, whether spiritually, mentally, or through learning new things.</li>
-      </ul>
+      <div class="fun-facts-grid">
+        <div class="fact-card">🪵 I love woodworking and metalworking — building things grounds me.</div>
+        <div class="fact-card">🎵 Music is huge for me — I love producing beats and discovering new sounds.</div>
+        <div class="fact-card">🌎 Spanish has become a meaningful part of my life.</div>
+        <div class="fact-card">🏔️ I'm happiest outside — mountains, late-night drives, and bonfires.</div>
+        <div class="fact-card">🤝 I genuinely love connecting with people and hearing their stories.</div>
+        <div class="fact-card">🏆 I love friendly competition — anything that brings people together.</div>
+        <div class="fact-card">🔨 I always have a personal project going, creative or practical.</div>
+        <div class="fact-card">📈 I'm always trying to grow — spiritually, mentally, through learning.</div>
+      </div>
     </div>
   </section>
 
@@ -252,18 +272,11 @@
 
   <!-- FOOTER -->
   <footer>
-    © 2025 Xander Nelson. All rights reserved.
+    <div class="footer-inner">
+      <span class="footer-name">Xander Nelson</span>
+      <span class="footer-copy">© 2025 · All rights reserved</span>
+    </div>
   </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
