@@ -56,6 +56,26 @@ a { text-decoration: none; }
   border-bottom: 1px solid rgba(200, 169, 110, 0.15);
 }
 
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.nav-brand-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+
+.nav-brand:hover .nav-brand-name {
+  color: var(--accent);
+}
+
 .logo {
   height: 48px;
   width: auto;
@@ -63,7 +83,7 @@ a { text-decoration: none; }
 
 .navbar nav {
   display: flex;
-  gap: 32px;
+  gap: 6px;
 }
 
 .navbar nav a {
@@ -73,11 +93,26 @@ a { text-decoration: none; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #aaa;
-  transition: color 0.2s ease;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }
 
 .navbar nav a:hover {
   color: var(--accent);
+  background: rgba(200, 169, 110, 0.12);
+  border-color: rgba(200, 169, 110, 0.35);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 4px 8px;
 }
 
 /* ── HERO ──────────────────────────────────────────────────── */
@@ -640,6 +675,28 @@ footer {
   body { padding-top: 60px; }
 
   .navbar { padding: 12px 20px; }
+
+  .nav-toggle { display: block; }
+
+  .navbar nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: rgba(17, 17, 17, 0.98);
+    display: none;
+    gap: 2px;
+    padding: 10px 20px 20px;
+    border-bottom: 1px solid rgba(200, 169, 110, 0.15);
+  }
+
+  .navbar nav.open { display: flex; }
+
+  .navbar nav a {
+    padding: 12px 10px;
+    border-radius: 6px;
+  }
 
   .hero {
     padding: 48px 6% 80px;
