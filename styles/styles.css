@@ -1,5 +1,6 @@
 :root {
   --bg-main:        #f8f6f1;      /* warm off-white */
+  --bg-tan:         #ede2c6;      /* sandy tan */
   --bg-card:        #ffffff;
   --text-main:      #1a1a1a;
   --text-muted:     #6b6b6b;
@@ -387,6 +388,14 @@ a { text-decoration: none; }
   100% { left: 100%; }
 }
 
+#resume {
+  background: var(--bg-main);
+}
+
+#about {
+  background: var(--bg-tan);
+}
+
 /* ── SECTION WRAPPER ───────────────────────────────────────── */
 
 .section-wrapper {
@@ -426,29 +435,20 @@ a { text-decoration: none; }
 /* ── SECTION CARDS ─────────────────────────────────────────── */
 
 .section {
-  background: var(--bg-card);
-  padding: 40px 48px;
-  border-radius: var(--radius-lg);
-  margin-bottom: 28px;
-  box-shadow: var(--shadow-card);
-  border: 1px solid rgba(0,0,0,0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.section:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-hover);
+  margin-bottom: 48px;
 }
 
 .section h2 {
   font-family: var(--font-display);
   font-size: 1.55rem;
   font-weight: 700;
-  margin: 0 0 28px;
+  margin: 0 0 26px;
+  padding-bottom: 14px;
   display: flex;
   align-items: center;
   gap: 14px;
   color: var(--ink);
+  border-bottom: 1px solid rgba(26,26,26,0.14);
 }
 
 .section-tag {
@@ -554,12 +554,9 @@ a { text-decoration: none; }
   display: flex;
   align-items: flex-start;
   gap: 48px;
-  background: var(--bg-card);
-  border-radius: var(--radius-lg);
-  padding: 48px;
-  margin-bottom: 28px;
-  box-shadow: var(--shadow-card);
-  border: 1px solid rgba(0,0,0,0.06);
+  margin-bottom: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(26,26,26,0.14);
 }
 
 .about-photo {
@@ -606,23 +603,17 @@ a { text-decoration: none; }
 }
 
 .fact-card {
-  background: var(--bg-main);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: var(--radius-md);
-  padding: 16px 18px;
-  font-size: 0.875rem;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(26,26,26,0.1);
+  font-size: 0.9rem;
   line-height: 1.5;
   color: var(--text-main);
   font-weight: 400;
-  transition: all 0.22s ease;
+  transition: color 0.2s ease;
 }
 
 .fact-card:hover {
-  background: var(--ink);
-  color: #fff;
-  border-color: var(--ink);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  color: var(--accent-dark);
 }
 
 /* ── FOOTER ────────────────────────────────────────────────── */
@@ -752,13 +743,10 @@ footer {
 
   .section-wrapper { padding: 50px 5%; }
 
-  .section { padding: 28px 22px; }
-
   .about-hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 32px 24px;
     gap: 28px;
   }
 
