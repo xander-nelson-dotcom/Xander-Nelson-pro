@@ -1,4 +1,3 @@
-
 :root {
   --bg-main:        #f8f6f1;      /* warm off-white */
   --bg-card:        #ffffff;
@@ -36,6 +35,11 @@ body {
 }
 
 a { text-decoration: none; }
+
+/* anchor targets shouldn't hide under the fixed navbar when jumped to */
+#home, #resume, #about {
+  scroll-margin-top: 88px;
+}
 
 /* ── NAVBAR ────────────────────────────────────────────────── */
 
