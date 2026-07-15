@@ -625,21 +625,6 @@ a { text-decoration: none; }
   box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
 
-/* ── BACK TO TOP ───────────────────────────────────────────── */
-
-.back-to-top {
-  display: block;
-  text-align: center;
-  margin: 60px auto 20px;
-  color: var(--text-muted);
-  font-size: 0.875rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
-}
-
-.back-to-top:hover { color: var(--accent); }
-
 /* ── FOOTER ────────────────────────────────────────────────── */
 
 footer {
@@ -655,6 +640,42 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--accent-dark);
+}
+
+.footer-links a.footer-top-link {
+  color: #888;
+}
+
+.footer-links a.footer-top-link:hover {
+  color: var(--accent);
 }
 
 .footer-name {
@@ -749,6 +770,10 @@ footer {
     flex-direction: column;
     gap: 8px;
     text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
   }
 
   body { overflow-x: hidden; }
