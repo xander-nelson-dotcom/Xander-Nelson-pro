@@ -388,20 +388,24 @@ a { text-decoration: none; }
   100% { left: 100%; }
 }
 
-#resume {
-  background: var(--bg-main);
+.band-tan {
+  background: var(--bg-tan);
 }
 
-#about {
-  background: var(--bg-tan);
+.band-off {
+  background: var(--bg-main);
 }
 
 /* ── SECTION WRAPPER ───────────────────────────────────────── */
 
 .section-wrapper {
-  padding: 80px 8%;
+  padding: 64px 8%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.section:last-child {
+  margin-bottom: 0;
 }
 
 /* ── PAGE HEADER ───────────────────────────────────────────── */
@@ -554,9 +558,6 @@ a { text-decoration: none; }
   display: flex;
   align-items: flex-start;
   gap: 48px;
-  margin-bottom: 48px;
-  padding-bottom: 40px;
-  border-bottom: 1px solid rgba(26,26,26,0.14);
 }
 
 .about-photo {
