@@ -45,9 +45,7 @@
           <a href="https://www.linkedin.com/in/xander-nelson/" target="_blank" rel="noopener" class="btn btn-outline">
             LinkedIn
           </a>
-         <a href="mailto:xander@russandbrit.com?subject=Hi%20Xander%20-%20saw%20your%20portfolio" class="btn btn-outline">
-  Email Me
-</a>
+         <a href="mailto:xander@russandbrit.com" class="btn btn-outline email-link">
         </div>
       </div>
 
@@ -276,7 +274,7 @@
       <div class="footer-links">
         <a href="Xander-NelsonOct2026.pdf" target="_blank" rel="noopener">Resume</a>
         <a href="https://www.linkedin.com/in/xander-nelson/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=xander@russandbrit.com" target="_blank" rel="noopener">Email</a>
+        <a href="mailto:xander@russandbrit.com" class="email-link">Email</a>
         <a href="#home" class="footer-top-link">Back to top</a>
       </div>
     </div>
@@ -288,6 +286,16 @@
         document.querySelector('.navbar nav').classList.remove('open');
       });
     });
+
+    // Phones: keep mailto (opens the mail app). Desktop: open Gmail compose in a new tab.
+    const isPhone = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (!isPhone) {
+      document.querySelectorAll('.email-link').forEach(link => {
+        link.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=xander@russandbrit.com';
+        link.target = '_blank';
+        link.rel = 'noopener';
+      });
+    }
   </script>
 
 </body>
