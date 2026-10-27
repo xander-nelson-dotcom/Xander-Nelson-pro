@@ -45,7 +45,9 @@
           <a href="https://www.linkedin.com/in/xander-nelson/" target="_blank" rel="noopener" class="btn btn-outline">
             LinkedIn
           </a>
-         <a href="mailto:xander@russandbrit.com" class="btn btn-outline email-link">
+         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=xander@russandbrit.com" target="_blank" rel="noopener" class="btn btn-outline">
+  Email Me
+</a>
         </div>
       </div>
 
@@ -272,31 +274,21 @@
         <span class="footer-copy">© 2026 · All rights reserved</span>
       </div>
       <div class="footer-links">
-        <a href="Xander-NelsonOct2026.pdf" target="_blank" rel="noopener">Resume</a>
-        <a href="https://www.linkedin.com/in/xander-nelson/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:xander@russandbrit.com" class="email-link">Email</a>
-        <a href="#home" class="footer-top-link">Back to top</a>
+         <a href="Xander-NelsonOct2026.pdf" target="_blank" rel="noopener">Resume</a>
+          <a href="https://www.linkedin.com/in/xander-nelson/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=xander@russandbrit.com" target="_blank" rel="noopener">Email</a>
+          <a href="#home" class="footer-top-link">Back to top</a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
-    document.querySelectorAll('.navbar nav a').forEach(a => {
-      a.addEventListener('click', () => {
-        document.querySelector('.navbar nav').classList.remove('open');
+    <script>
+      document.querySelectorAll('.navbar nav a').forEach(a => {
+        a.addEventListener('click', () => {
+          document.querySelector('.navbar nav').classList.remove('open');
+        });
       });
-    });
+    </script>
 
-    // Phones: keep mailto (opens the mail app). Desktop: open Gmail compose in a new tab.
-    const isPhone = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    if (!isPhone) {
-      document.querySelectorAll('.email-link').forEach(link => {
-        link.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=xander@russandbrit.com';
-        link.target = '_blank';
-        link.rel = 'noopener';
-      });
-    }
-  </script>
-
-</body>
-</html>
+  </body>
+  </html>
